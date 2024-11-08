@@ -14,7 +14,7 @@
   --p-color:                      #717275;
   --link-hover-color:             #D75A4A;  
 
-  --body-font-family:             'Unbounded', sans-serif;
+  --body-font-family:             'Poppins', sans-serif;
 
   --h1-font-size:                 42px;
   --h2-font-size:                 36px;
@@ -84,6 +84,7 @@ h4 {
 
 h5 {
   font-size: var(--h5-font-size);
+  color: var(--primary-color);
 }
 
 h6 {
@@ -99,8 +100,9 @@ p {
 
 ul li {
   color: var(--p-color);
-  font-size: var(--p-font-size);
-  font-weight: var(--font-weight-normal);
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  padding: .5rem;
 }
 
 a, 
@@ -621,7 +623,7 @@ fill: #FFBC00;;
   CUSTOM BLOCK              
 -----------------------------------------*/
 .custom-block {
-  background-image: url('../images/businessman-sitting-by-table-cafe.jpg');
+  background-image: url('/assets/hp-partner2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -629,6 +631,14 @@ fill: #FFBC00;;
   position: relative;
   overflow: hidden;
   height: 500px;
+}
+
+.custom-block2 {
+  background-image: url('/assets/hp1.jpg');
+}
+
+.custom-block3 {
+  background-image: url('/assets/hp2.jpg');
 }
 
 .custom-block::after {
@@ -710,6 +720,8 @@ fill: #FFBC00;;
   margin-top: 5px;
   margin-bottom: 10px;
   padding: 15px 30px;
+  width: 100%;
+  font-size: 12px;
 }
 
 .nav-pills .nav-link:hover,
@@ -769,7 +781,7 @@ fill: #FFBC00;;
   AUTHOR SECTION            
 -----------------------------------------*/
 .author-section {
-  background-image: url('../images/circle-scatter-haikei.png');
+
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom;
@@ -778,12 +790,10 @@ fill: #FFBC00;;
 }
 
 .author-image {
-  border: 10px solid var(--secondary-color);
-  border-radius: 100%;
   display: block;
   margin: auto;
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
 }
 

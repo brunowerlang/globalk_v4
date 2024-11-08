@@ -1,0 +1,37 @@
+@keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* Defina o estilo base dos elementos antes de serem animados */
+.animation-right {
+    opacity: 0; /* Inicia invisível */
+    transform: translateX(50px); /* Posicionado à direita */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  /* Quando o elemento estiver na tela, a animação inicia */
+  .animation-right.is-visible {
+    opacity: 1; /* Torna visível */
+    transform: translateX(0); /* Volta à posição inicial */
+    animation: slideInRight 1s ease-out forwards;
+  }
+  
+  /* Opções de atraso para diferentes elementos */
+  .animation-right.delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animation-right.delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .animation-right.delay-600 {
+    animation-delay: 0.6s;
+  }

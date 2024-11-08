@@ -349,7 +349,7 @@ nav {
   }
 
   .nav__links a:hover {
-    border-color: var(--primary-color);
+    color: var(--primary-color);
   }
 
   .nav__btns {
@@ -478,4 +478,9 @@ nav {
     }
   
   }
+
+.section-bg {
+
+  background: linear-gradient(45deg, #bc1a1a, #4e0303);
+}
 
