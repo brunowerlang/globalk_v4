@@ -484,3 +484,58 @@ nav {
   background: linear-gradient(45deg, #bc1a1a, #4e0303);
 }
 
+
+#translateButton {
+  width: 30px;
+  height: 30px;
+  
+  background-image: url('/assets/eua.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  margin-top: 10px;
+  right: 30px;
+  bottom: 22px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: 99999;
+}
+
+#translateButton2 {
+  width: 30px;
+  height: 30px;
+  
+  background-image: url('/assets/espanha.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  margin-top: 10px;
+  right: 80px;
+  bottom: 22px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: 99999;
+}
+
+
+#translateButton3 {
+    width: 30px;
+    height: 30px;
+    
+    background-image: url('/assets/brasil.png');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 10px;
+    right: 130px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    bottom: 22px;
+    z-index: 99999;
+}
