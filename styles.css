@@ -159,8 +159,8 @@ nav {
 }
 
 .header__image__card-1 {
-  top: 25%;
-  left: 0;
+  top: 35%;
+  left: 30%;
   transform: translate(-50%, -50%);
 }
 
@@ -171,7 +171,7 @@ nav {
 }
 
 .header__image__card-3 {
-  top: 60%;
+  top: 55%;
   left: 0;
   transform: translateY(-50%);
 }
