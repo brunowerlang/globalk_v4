@@ -29,6 +29,23 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+/* Esconde o logo grande por padrão */
+.logo-desktop {
+  display: none;
+}
+
+/* Quando a tela for maior que 769px */
+@media (min-width: 769px) {
+  /* Esconde o logo pequeno e mostra o grande */
+  .logo-mobile {
+    display: none;
+  }
+  .logo-desktop {
+    display: inline;
+  }
+}
+
 nav {
   position: fixed;
   isolation: isolate;
