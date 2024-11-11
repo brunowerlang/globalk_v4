@@ -67,6 +67,7 @@
     cursor: pointer;
     font-weight: 500;
     transition: 0.2s ease;
+    color:#bc1a1a;
   }
   .footer-col form button:hover {
     background: #cecccc;
