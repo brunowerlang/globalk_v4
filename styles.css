@@ -375,6 +375,7 @@ nav {
     background-color: transparent;
     transform: none;
     justify-content: flex-end;
+    margin-bottom: 0 !important;
   }
 
   .nav__links a {
