@@ -420,149 +420,133 @@
 
 
 
-<section class="contact-section section-padding " id="nav_6">
-  <div class="container">
+  <section class="contact-section section-padding" id="nav_6">
+    <div class="container">
       <div class="row">
-
-          <div class="col-lg-5 col-12 mx-auto">
-            <form class="custom-form ebook-download-form bg-white shadow" action="#" method="post" role="form">
-              <div class="text-center mb-5">
-                  <h2 class="mb-1 text-gradiente title">May we help you?</h2>
+        <!-- Form Section -->
+        <div class="col-lg-5 col-12 mx-auto">
+          <form id="form" class="custom-form ebook-download-form bg-white shadow" action="#" method="post" role="form">
+            <div class="text-center mb-5">
+              <h2 class="mb-1 text-gradiente title">May we help you?</h2>
+            </div>
+            <div class="ebook-download-form-body">
+              <!-- Name Field -->
+              <div class="input-group mb-4">
+                <input type="text" name="name" id="ebook-form-name" class="form-control" placeholder="Your Name" required>
               </div>
-            
-              <div class="ebook-download-form-body">
-                  <div class="input-group mb-4">
-                      <input type="text" name="ebook-form-name" id="ebook-form-name" class="form-control" aria-label="ebook-form-name" aria-describedby="basic-addon1" placeholder="Your Name" required>
-                      <span class="input-group-text" id="basic-addon1">
-                          
-                      </span>
-                  </div>
-            
-                  <div class="input-group mb-4">
-                      <input type="email" name="ebook-email" id="ebook-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@company.com" aria-label="ebook-form-email" aria-describedby="basic-addon2" required>
-                      <span class="input-group-text" id="basic-addon2">
-                          
-                      </span>
-                  </div>
-            
-            
-                  <div class="input-group mb-4">
-                      <input type="tel" name="ebook-phone" id="ebook-phone" class="form-control" placeholder="Your Phone Number" aria-label="ebook-form-phone" aria-describedby="basic-addon3" required>
-                      <span class="input-group-text" id="basic-addon3">
-                          
-                      </span>
-                  </div>
-            
-    
-                  <div class="input-group mb-4">
-                      <textarea name="ebook-message" id="ebook-message" class="form-control" placeholder="Your Message" aria-label="ebook-form-message" rows="4" required style="border-radius:  20px;"></textarea>
-                  </div>
-            
-                  <div class="col-lg-8 col-md-10 col-8 mx-auto">
-                      <button type="submit" class="form-control">Send</button>
-                  </div>
+              <!-- Email Field -->
+              <div class="input-group mb-4">
+                <input type="email" name="email" id="ebook-email" class="form-control" placeholder="your@company.com" required>
               </div>
-            </form>
-            
-          </div>
-
-          <div class="col-lg-6 col-12">
-              <h6 class="mt-5 mb-4 title ">Everything you need to clarify your questions and support your journey.</h6>
-
-
-
-              <p class="mb-3 ">
-                 
-                  Av. Liberdade, 6.315 - Prédio 05-B -
-              </p>
-
-              <p class="mb-2">
-             
-                    Iporanga - Sorocaba - Brazil CEP 18087-170
-                
-              </p>
-
-              <p>
-                  
-                    +55 11 3230-5636
-                  
-              </p>
-
-              <h6 class="site-footer-title mt-5 mb-3 sub-title">Social</h6>
-
-              <ul class="social-icon mb-4">
-                  <li class="social-icon-item">
-                      <a href="#" class="social-icon-link bi-instagram"></a>
-                  </li>
-
-                  <li class="social-icon-item">
-                      <a href="#" class="social-icon-link bi-twitter"></a>
-                  </li>
-                  
-                  <li class="social-icon-item">
-                      <a href="#" class="social-icon-link bi-facebook"></a>
-                  </li>
-
-                  <li class="social-icon-item">
-                      <a href="#" class="social-icon-link bi-whatsapp"></a>
-                  </li>
-              </ul>
-
- 
-          </div>
-
+              <!-- Phone Field -->
+              <div class="input-group mb-4">
+                <input type="tel" name="phone" id="ebook-phone" class="form-control" placeholder="Your Phone Number" required>
+              </div>
+              <!-- Message Field -->
+              <div class="input-group mb-4">
+                <textarea name="message" id="ebook-message" class="form-control" placeholder="Your Message" rows="4" required style="border-radius: 20px;"></textarea>
+              </div>
+              <!-- Submit Button -->
+              <div class="col-lg-8 col-md-10 col-8 mx-auto">
+                <button type="submit" class="form-control">Send</button>
+              </div>
+            </div>
+          </form>
+          <!-- Result Section -->
+          <div id="result"></div> <!-- This is where the success or error message will appear -->
+        </div>
+  
+        <!-- Contact Information -->
+        <div class="col-lg-6 col-12">
+          <h6 class="mt-5 mb-4 title">Everything you need to clarify your questions and support your journey.</h6>
+          <p class="mb-3">
+            Av. Liberdade, 6.315 - Prédio 05-B -
+          </p>
+          <p class="mb-2">
+            Iporanga - Sorocaba - Brazil CEP 18087-170
+          </p>
+          <p>
+            +55 11 3230-5636
+          </p>
+  
+          <h6 class="site-footer-title mt-5 mb-3 sub-title">Social</h6>
+          <ul class="social-icon mb-4">
+            <li class="social-icon-item">
+              <a href="#" class="social-icon-link bi-instagram"></a>
+            </li>
+            <li class="social-icon-item">
+              <a href="#" class="social-icon-link bi-twitter"></a>
+            </li>
+            <li class="social-icon-item">
+              <a href="#" class="social-icon-link bi-facebook"></a>
+            </li>
+            <li class="social-icon-item">
+              <a href="#" class="social-icon-link bi-whatsapp"></a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 
+
+
+
+  
 <section class="footer">
   <div class="container">
-  <div class="footer-row">
-    <div class="footer-col">
-      <img src="/assets/logo-globalk-group-2.png" style="width: 200px;" alt="HP & GLOBALK signed Compaq Brand licensing agreement in 2013">
-  <p>HP & GLOBALK signed Compaq Brand licensing agreement in 2013</p>
+    <div class="footer-row">
+      <div class="footer-col">
+        <img src="/assets/logo-globalk-group-2.png" style="width: 200px;" alt="HP & GLOBALK signed Compaq Brand licensing agreement in 2013">
+        <p>HP & GLOBALK signed Compaq Brand licensing agreement in 2013</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="links">
+          <li><a href="#nav_1">Sales</a></li>
+          <li><a href="#nav_2">About Us</a></li>
+          <li><a href="#nav_3">Cases</a></li>
+          <li><a href="#nav_4">Partner</a></li>
+          <li><a href="#nav_5">Open Box</a></li>
+          <li><a href="#nav_6">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get news and updates</h4>
+        
+        <!-- Formulário para coletar o email -->
+        <form id="subscribe-form" method="post" action="https://api.sheetmonkey.io/form/vH4mjZ4ydT8BkyVbeNNUn3">
+          
+          <input type="name" name="" id="name" placeholder="Your name required">
+          <input type="email" id="email" placeholder="Your email" required>
+          <button type="submit">SUBSCRIBE</button>
+        </form>
+        
+        <div class="icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
     </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <ul class="links">
-        <li><a href="#nav_1">Sales</a></li>
-        <li><a href="#nav_2">About Us</a></li>
-        <li><a href="#nav_3">Cases</a></li>
-        <li><a href="#nav_4">Partner</a></li>
-        <li><a href="#nav_5">Open Box</a></li>
-        <li><a href="#nav_6">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Get news and updates</h4>
-     
-      <form action="#">
-        <input type="text" placeholder="Your email" required>
-        <button type="submit">SUBSCRIBE</button>
-      </form>
-      <div class="icons">
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-github"></i>
+  </div>
+
+  <div class="footer-con">
+    <div class="container overlay-content">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="footer-con text-center">
+            <p style="font-size: 12px; color:#FFF;">© GlobalK Tecnologia 2013 - 2024. All Rights Reserved.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<div class="footer-con">
-  <div class="container overlay-content">
-     <div class="row">
-        <div class="col-lg-12">
-           <div class="footer-con text-center">
-              <p style="font-size: 12px; color:#FFF;">© GlobalK Tecnologia 2013 - 2024. All Rights Reserved.</p>
-           </div>
-        </div>
-     </div>
-  </div>
-</div>
 </section>
+
 
 <button id="translateButton"  ></button>
     <button id="translateButton2" ></button>
@@ -577,5 +561,7 @@
         <script src="js/custom.js"></script>
        <script src="scrol-button.js"></script>
        <script src="traducao.js"></script>
+       <script src="newsletter.js"></script>
+       <script src="contact.js"></script>
   </body>
 </html>

@@ -41,7 +41,8 @@
   .footer-col form {
     display: flex;
     gap: 5px;
-    margin: 2rem 0;
+  
+    flex-direction: column;
   }
   .footer-col input {
     height: 45px;
