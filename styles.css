@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;  /* Impede o overflow horizontal */
+  width: 100%;  /* Garante que o corpo não ultrapasse 100% da largura da tela */
+}
+
 img {
   display: flex;
   width: 100%;
@@ -27,6 +32,7 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 
@@ -512,16 +518,14 @@ nav {
 #translateButton {
   width: 30px;
   height: 30px;
-  
   background-image: url('/assets/eua.png');
   background-size: cover;
   background-position: center;
   border: none;
   cursor: pointer;
   position: fixed;
-  margin-top: 10px;
-  right: 30px;
   bottom: 22px;
+  right: 90px; /* Alinhamento à direita, ajustado para o primeiro botão */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   z-index: 99999;
@@ -530,36 +534,32 @@ nav {
 #translateButton2 {
   width: 30px;
   height: 30px;
-  
   background-image: url('/assets/espanha.png');
   background-size: cover;
   background-position: center;
   border: none;
   cursor: pointer;
   position: fixed;
-  margin-top: 10px;
-  right: 80px;
   bottom: 22px;
+  right: 50px; /* Alinhamento à direita, ajustado para o segundo botão */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   z-index: 99999;
 }
 
-
 #translateButton3 {
-    width: 30px;
-    height: 30px;
-    
-    background-image: url('/assets/brasil.png');
-    background-size: cover;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    position: fixed;
-    margin-top: 10px;
-    right: 130px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-    bottom: 22px;
-    z-index: 99999;
+  width: 30px;
+  height: 30px;
+  background-image: url('/assets/brasil.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 22px;
+  right: 10px; /* Alinhamento à direita, ajustado para o terceiro botão */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  z-index: 99999;
 }
+
