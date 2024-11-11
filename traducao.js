@@ -1,7 +1,7 @@
 function translatePage(targetLanguage) {
     const apiKey = 'AIzaSyAPXbbPo89J9jame2kubA22u3TxcBzBWUI'; // Substitua pela sua chave de API do Google Translate
   
-    $('h1, h2, h3, h4, h5, p, li, span, div, a').each(function () {
+    $('h1, h2, h3, h4, h5, p, li, span, div, a, h6').each(function () {
       const element = $(this);
       if (element.text().trim() !== "" && !element.children().length) {
         const originalHTML = element.html();
