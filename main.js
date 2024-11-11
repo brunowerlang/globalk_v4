@@ -34,23 +34,23 @@ ScrollReveal().reveal(".header__content h1", {
 
 ScrollReveal().reveal(".header__content p", {
   ...scrollRevealBottom,
-  delay: 1000,
+  delay: 550,
 });
 
 ScrollReveal().reveal(".header__content form", {
   ...scrollRevealBottom,
-  delay: 1500,
+  delay: 600,
 });
 
 ScrollReveal().reveal(".header__content .bar", {
   ...scrollRevealBottom,
-  delay: 2000,
+  delay: 650,
 });
 
 ScrollReveal().reveal(".header__image__card", {
   duration: 1000,
   interval: 500,
-  delay: 2500,
+  delay: 500,
 });
 
 

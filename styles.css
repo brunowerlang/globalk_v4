@@ -339,7 +339,7 @@ nav {
 @media (width > 768px) {
   nav {
     position: static;
-    padding-block: 2rem 0;
+    padding-block: .5rem 0;
     padding-inline: 1rem;
     max-width: var(--max-width);
     margin-inline: auto;
@@ -347,6 +347,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    border-bottom: 1px solid #f1f1f1;
   }
 
   .nav__header {
@@ -373,6 +374,7 @@ nav {
     flex-direction: row;
     background-color: transparent;
     transform: none;
+    justify-content: flex-end;
   }
 
   .nav__links a {
