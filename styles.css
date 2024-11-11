@@ -16,7 +16,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 html {
   overflow-x: hidden;  /* Impede o overflow horizontal */
   width: 100%;  /* Garante que o corpo não ultrapasse 100% da largura da tela */
