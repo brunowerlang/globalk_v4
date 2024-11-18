@@ -623,23 +623,16 @@ fill: #FFBC00;;
   CUSTOM BLOCK              
 -----------------------------------------*/
 .custom-block {
-  background-image: url('/assets/hp-partner2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+ 
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
   height: 500px;
+  border: 2px solid var(--primary-color);
+  background-color:rgb(255, 218, 218);
 }
 
-.custom-block2 {
-  background-image: url('/assets/hp1.jpg');
-}
 
-.custom-block3 {
-  background-image: url('/assets/hp2.jpg');
-}
 
 .custom-block::after {
   content: "";
@@ -649,7 +642,7 @@ fill: #FFBC00;;
   bottom: 0;
   left: 0;
   pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.45);
+
 }
 
 .custom-block .avatar-image {
@@ -687,11 +680,11 @@ fill: #FFBC00;;
 
 .custom-block-info strong,
 .custom-block-info p {
-  color: var(--white-color);
+  color: var(--dark-color);
 }
 
 .custom-block-info p {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--dark-color);
   line-height: 1.8;
 }
 

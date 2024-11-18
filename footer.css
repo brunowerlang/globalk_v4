@@ -15,7 +15,7 @@
   }
   .footer-row .footer-col h4 {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
   }
@@ -45,8 +45,8 @@
     flex-direction: column;
   }
   .footer-col input {
-    height: 45px;
-    border-radius: 6px;
+    height: 35px;
+    border-radius: var(--border-radius-large);
     background: none;
     width: 100%;
     outline: none;
@@ -58,13 +58,14 @@
   }
   .footer-col input::placeholder {
     color: #ccc;
+    font-size: 12px;
   }
    .footer-col form button {
     background: #fff;
     outline: none;
     border: none;
-    padding: 10px 15px;
-    border-radius: 6px;
+    padding: 7px 0px;
+    border-radius: var(--border-radius-large);
     cursor: pointer;
     font-weight: 500;
     transition: 0.2s ease;

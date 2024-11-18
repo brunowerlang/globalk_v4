@@ -147,6 +147,19 @@ ScrollReveal().reveal(".nav-link7", {
 });
 
 
+ScrollReveal().reveal(".nav-link8", {
+  ...scrollRevealConfig,
+  origin: "left",
+  delay: 160,
+});
+
+
+ScrollReveal().reveal(".nav-link9", {
+  ...scrollRevealConfig,
+  origin: "left",
+  delay: 160,
+});
+
 const scrollRevealRight = {
   distance: "200px",
   origin: "right",
@@ -186,6 +199,16 @@ ScrollReveal().reveal("#item-6", {
 ScrollReveal().reveal("#item-7", {
   ...scrollRevealRight,
   delay: 350,
+});
+
+ScrollReveal().reveal("#item-8", {
+  ...scrollRevealRight,
+  delay: 400,
+});
+
+ScrollReveal().reveal("#item-9", {
+  ...scrollRevealRight,
+  delay: 450,
 });
 
 

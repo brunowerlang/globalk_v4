@@ -381,11 +381,11 @@ nav {
   .nav__links a {
     padding-block: 5px;
     color: var(--text-dark);
-    border-bottom: 4px solid transparent;
+    border-bottom: 2px solid transparent;
   }
 
   .nav__links a:hover {
-    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
   }
 
   .nav__btns {
@@ -475,7 +475,7 @@ nav {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
+    border:1px solid rgba(255, 255, 255, 1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     padding: 2rem;
     border-radius: 10px;
@@ -517,7 +517,7 @@ nav {
 
 .section-bg {
 
-  background: linear-gradient(45deg, #bc1a1a, #4e0303);
+  background: linear-gradient(45deg, #ff9898, #c90000);
 }
 
 
