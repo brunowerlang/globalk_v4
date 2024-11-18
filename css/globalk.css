@@ -908,6 +908,9 @@ fill: #FFBC00;;
   font-weight: var(--font-weight-semibold);
   transition: all 0.3s;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .custom-form button[type="submit"]:hover,

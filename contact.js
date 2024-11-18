@@ -4,10 +4,19 @@ const result = document.getElementById('result');
 form.addEventListener('submit', function(e) {
   e.preventDefault(); // Impede o envio tradicional do formulário
 
-  // Exibe o ícone de carregamento
-  result.style.display = "block";
-  result.innerHTML = ""; // Limpa qualquer conteúdo anterior
-  result.classList.add("loading-icon"); // Adiciona o ícone de carregamento
+  // Referência ao botão de envio
+  const submitButton = form.querySelector('button[type="submit"]');
+  
+  // Salva o texto original do botão
+  const originalButtonText = submitButton.textContent;
+
+  // Remove o texto do botão e adiciona a imagem de carregamento
+  submitButton.textContent = ''; // Remove o texto
+  const loadingImg = document.createElement('img');
+  loadingImg.src = '/images/loading.png'; // Caminho para sua imagem
+  loadingImg.alt = 'Carregando...';
+  loadingImg.className = 'loading-img';
+  submitButton.appendChild(loadingImg); // Adiciona a imagem ao botão
 
   // Captura os dados do formulário
   const formData = new FormData(form);
@@ -25,24 +34,20 @@ form.addEventListener('submit', function(e) {
       access_key: '8ae7421f-5105-40aa-9b6d-b3961690c64a' // Sua chave de API do Web3Forms
     })
   })
-  .then(async (response) => {
-    let jsonResponse = await response.json(); // Aguardar resposta em formato JSON
-    if (response.ok) {  // Verifica se a resposta é bem-sucedida
-      result.classList.remove("loading-icon"); // Remove o ícone de carregamento
-    } else {
-      result.innerHTML = `Error: ${jsonResponse.message || 'Unknown error'}`; // Exibe erro com a mensagem da API
-      result.classList.remove("loading-icon"); // Remove o ícone de carregamento
-    }
-  })
+
   .catch(error => {
     console.log(error); // Registra o erro no console
-    result.innerHTML = "Something went wrong!"; // Exibe mensagem de erro genérico
-    result.classList.remove("loading-icon"); // Remove o ícone de carregamento
+    result.innerHTML = "Algo deu errado! Por favor, tente novamente.";
   })
   .finally(() => {
-    form.reset(); // Reseta o formulário após envio
+    // Limpa o formulário e restaura o botão
+    form.reset();
+    submitButton.textContent = originalButtonText; // Restaura o texto original do botão
+    loadingImg.remove(); // Remove a imagem de carregamento
+    
+    // Oculta a mensagem após 3 segundos
     setTimeout(() => {
-      result.style.display = "none"; // Oculta a mensagem após 3 segundos
+      result.style.display = "none";
     }, 3000);
   });
 });
