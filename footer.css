@@ -104,10 +104,9 @@
     }
     .footer-col form :where(input, button) {
       width: 100%;
-    }
-    .footer-col form button {
       margin: 10px 0 0 0;
     }
+   
   }
 
 .footer-col .links {
