@@ -316,7 +316,10 @@ nav {
   margin: auto;
   animation: float 3s ease-in-out infinite;
   animation-play-state: running;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+
 
 .header__content button:hover {
   animation-play-state: paused;
