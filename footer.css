@@ -44,6 +44,14 @@
   
     flex-direction: column;
   }
+
+.btn-green {
+
+  background-color: green !important;
+  color: #FFF !important;
+}
+
+
   .footer-col input {
     height: 35px;
     border-radius: var(--border-radius-large);

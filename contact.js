@@ -34,20 +34,28 @@ form.addEventListener('submit', function(e) {
       access_key: '8ae7421f-5105-40aa-9b6d-b3961690c64a' // Sua chave de API do Web3Forms
     })
   })
-
-  .catch(error => {
-    console.log(error); // Registra o erro no console
-    result.innerHTML = "Algo deu errado! Por favor, tente novamente.";
-  })
-  .finally(() => {
-    // Limpa o formulário e restaura o botão
-    form.reset();
-    submitButton.textContent = originalButtonText; // Restaura o texto original do botão
-    loadingImg.remove(); // Remove a imagem de carregamento
-    
-    // Oculta a mensagem após 3 segundos
-    setTimeout(() => {
-      result.style.display = "none";
-    }, 3000);
-  });
+    .then(response => response.json())
+ 
+    .catch(error => {
+      console.log(error); // Registra o erro no console
+      result.innerHTML = "Algo deu errado! Por favor, tente novamente.";
+    })
+    .finally(() => {
+      // Limpa o formulário
+      form.reset();
+      
+      // Restaura o texto do botão para "Enviado"
+      submitButton.textContent = 'Sent';
+      
+      // Adiciona a classe para o botão ficar verde
+      submitButton.classList.add('btn-green');
+      
+      // Remove a imagem de carregamento
+      loadingImg.remove(); 
+      
+      // Exibe a mensagem por 3 segundos e depois a esconde
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 3000);
+    });
 });

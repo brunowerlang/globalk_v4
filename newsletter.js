@@ -44,7 +44,6 @@ document.getElementById('subscribe-form').addEventListener('submit', function (e
       console.log('Dados enviados com sucesso:', data);
       alert('Obrigado por se inscrever!');
     })
- 
     .finally(() => {
       // Limpa os campos após o envio
       document.getElementById('name').value = '';
@@ -53,7 +52,10 @@ document.getElementById('subscribe-form').addEventListener('submit', function (e
       // Remove a imagem de carregamento
       loadingImg.remove();
 
-      // Restaura o texto original do botão
-      submitButton.textContent = originalButtonText;
+      // Muda o texto do botão para "Enviado"
+      submitButton.textContent = 'Subscribed';
+
+      // Adiciona a classe para o botão ficar verde
+      submitButton.classList.add('btn-green');
     });
 });
