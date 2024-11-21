@@ -186,7 +186,7 @@ nav {
 
 .header__image__card-1 {
   top: 35%;
-  left: 30%;
+  left: 0%;
   transform: translate(-50%, -50%);
 }
 
@@ -455,6 +455,8 @@ animation: spin .5s infinite linear;
   .header__content :is(h1, p, .bar) {
     text-align: left;
   }
+  
+ 
 }
 
 @media (width > 1024px) {
@@ -533,17 +535,42 @@ animation: spin .5s infinite linear;
       gap: 20px;
     }
   
+    .header__image__card-1 {
+
+      left: 30%;
+    }
+
+    .header__image__card-4 {
+
+      top: 80%;
+    }
+
+    .header__content {
+
+      order: -1;
+    }
+
+    .header__content h1 {
+      font-size: 4rem !important;
+    }
+
+    .header__image__card-3 {
+      top: 60%;
+    }
   }
 
-.section-bg {
-
-  background: linear-gradient(45deg, #ff9898, #c90000);
-}
+  .section-bg {
+    background-image: url('/assets/section-bg.png');
+    background-size: cover; /* Faz a imagem preencher a seção */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+  }
+  
 
 
 #translateButton {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-image: url('/assets/eua.png');
   background-size: cover;
   background-position: center;
@@ -551,15 +578,16 @@ animation: spin .5s infinite linear;
   cursor: pointer;
   position: fixed;
   bottom: 22px;
-  right: 90px; /* Alinhamento à direita, ajustado para o primeiro botão */
+  right: 150px; /* Alinhamento à direita, ajustado para o primeiro botão */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   z-index: 99999;
+  border-radius: 100%;
 }
 
 #translateButton2 {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-image: url('/assets/espanha.png');
   background-size: cover;
   background-position: center;
@@ -567,15 +595,16 @@ animation: spin .5s infinite linear;
   cursor: pointer;
   position: fixed;
   bottom: 22px;
-  right: 50px; /* Alinhamento à direita, ajustado para o segundo botão */
+  right: 90px; /* Alinhamento à direita, ajustado para o segundo botão */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   z-index: 99999;
+  border-radius: 100%;
 }
 
 #translateButton3 {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-image: url('/assets/brasil.png');
   background-size: cover;
   background-position: center;
@@ -583,9 +612,150 @@ animation: spin .5s infinite linear;
   cursor: pointer;
   position: fixed;
   bottom: 22px;
-  right: 10px; /* Alinhamento à direita, ajustado para o terceiro botão */
+  right: 30px; /* Alinhamento à direita, ajustado para o terceiro botão */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
-  z-index: 99999;
+  border-radius: 100%;
 }
 
+.nav-link8,
+.nav-link8.is-active {
+  background: var(--section-bg-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  color: var(--p-color) !important;
+}
+
+.nav-link9,
+.nav-link9.is-active {
+  background: var(--section-bg-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  color: var(--p-color) !important;
+}
+
+@media (max-width: 769px) {
+  .scrollspy-example-item h5 {
+
+    padding: 1rem 2rem !important;
+    background: var(--primary-color) !important;
+    color: var(--white-color) !important;
+   margin-bottom: 2rem;
+    border-radius: var(--border-radius-large);
+  }
+
+  .row>*  {
+  padding-right: calc(var(--bs-gutter-x)* .9) !important;
+  padding-left: calc(var(--bs-gutter-x)* .9) !important;
+}
+
+
+
+}
+
+.custom-block1 {
+  background-image: url('/images/card-1.png');
+  background-size: cover; /* Faz a imagem preencher a seção */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+
+.custom-block2 {
+  background-image: url('/images/card-2.png');
+  background-size: cover; /* Faz a imagem preencher a seção */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+
+.custom-block3 {
+  background-image: url('/images/card-3.png');
+  background-size: cover; /* Faz a imagem preencher a seção */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
+}
+
+
+
+
+
+.reviews-section {
+  position: relative;
+}
+
+.service-one__bubble {
+  display: inline-block;
+  vertical-align: middle;
+  width: 110px;
+  height: 110px;
+  background-color: #e7062b;
+  opacity: .3;
+  -webkit-animation-name: bubbleMover;
+  animation-name: bubbleMover;
+  -webkit-animation-duration: 9s;
+  animation-duration: 9s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-perspective: 100px;
+  perspective: 100px;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.service-one__bubble-one {
+  top: 40%;
+  left: 5%;
+}
+
+.service-one__bubble-two {
+  width: 44px;
+  height: 44px;
+  background-color: #f7c324;
+  bottom: 15%;
+  left: 15%;
+}
+
+.service-one__bubble-three {
+  width: 88px;
+  height: 88px;
+  background-color: #f7c324;
+  top: 10%;
+  left: 32%;
+}
+
+.service-one__bubble-four {
+  width: 44px;
+  height: 44px;
+  background-color: #e7062b;
+  top: 15%;
+  right: 20%;
+}
+
+.service-one__bubble-five {
+  background-color: #f7c324;
+  right: 10%;
+  top: 50%;
+}
+
+.service-one__bubble-six {
+
+  top: 80%;
+  right: 30%;
+}
+
+
+@keyframes bubbleMover {
+  0%, 100% {
+    -webkit-transform: translate(0, 0) rotate(0);
+    transform: translate(0, 0) rotate(0);
+  }
+  20%, 60% {
+    -webkit-transform: translate(50px, 100px) rotate(180deg);
+    transform: translate(50px, 100px) rotate(180deg);
+  }
+  30%, 80% {
+    -webkit-transform: translate(100px, 150px) rotate(0deg);
+    transform: translate(100px, 150px) rotate(0deg);
+  }
+}

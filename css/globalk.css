@@ -5,14 +5,14 @@
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #D75A4A;     
+  --primary-color:                #e7062b;     
   --secondary-color:              #000000;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #E34F4F;      
-  --custom-btn-bg-hover-color:    #D75A4A;  
+  --custom-btn-bg-hover-color:    #e7062b;  
   --dark-color:                   #000000;
   --p-color:                      #717275;
-  --link-hover-color:             #D75A4A;  
+  --link-hover-color:             #e7062b;  
 
   --body-font-family:             'Poppins', sans-serif;
 
@@ -100,7 +100,7 @@ p {
 
 ul li {
   color: var(--p-color);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: var(--font-weight-bold);
   padding: .5rem;
 }
@@ -629,7 +629,7 @@ fill: #FFBC00;;
   overflow: hidden;
   height: 500px;
   border: 2px solid var(--primary-color);
-  background-color:rgb(255, 218, 218);
+  
 }
 
 
@@ -680,22 +680,30 @@ fill: #FFBC00;;
 
 .custom-block-info strong,
 .custom-block-info p {
-  color: var(--dark-color);
+  color: var(--white-color);
 }
 
 .custom-block-info p {
-  color: var(--dark-color);
   line-height: 1.8;
 }
 
+
+.custom-block span {
+  color: var(--white-color);
+}
 
 /*---------------------------------------
   THE BOOK SECTION            
 -----------------------------------------*/
 .book-section-info {
-  padding-top: 40px;
+  padding-top: 15px;
   padding-right: 40px;
   padding-left: 40px;
+}
+
+.book-section img {
+
+  border-radius: var(--border-radius-medium);
 }
 
 .nav-pills {
@@ -822,6 +830,11 @@ fill: #FFBC00;;
   border-width: 450px 450px 0 0;
   border-color: var(--white-color) transparent transparent;
   pointer-events: none;
+}
+
+.contact-section h6 {
+  color: var(--white-color);
+  font-weight: 700;
 }
 
 .contact-section .container {
@@ -954,6 +967,7 @@ fill: #FFBC00;;
 
 .social-icon-link img {
 width: 55%;
+height: auto;
 }
 
 .social-icon-link:hover {
