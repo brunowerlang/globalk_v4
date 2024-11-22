@@ -36,10 +36,7 @@ form.addEventListener('submit', function(e) {
   })
     .then(response => response.json())
  
-    .catch(error => {
-      console.log(error); // Registra o erro no console
-      result.innerHTML = "Algo deu errado! Por favor, tente novamente.";
-    })
+ 
     .finally(() => {
       // Limpa o formulário
       form.reset();
