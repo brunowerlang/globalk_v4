@@ -3,67 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links Grid</title>
+    <link rel="stylesheet" href="index.css">
+    <title>GlobalK</title>
+  
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        /* Tela de loading */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            z-index: 9999;
+            flex-direction: column;
         }
 
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 800px;
-            width: 100%;
+        #loading img {
+
+            width: 200px;
         }
 
-        .grid-item {
-            background-color: black;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 18px;
-            transition: transform 0.3s ease, background-color 0.3s ease;
+        /* Estilo do spinner */
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #e7062b;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
         }
 
-        .grid-item:hover {
-            transform: scale(1.05);
-            background-color: #333;
-        }
-
-        .grid-item a {
-            color: white;
-            text-decoration: none;
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="grid-item">
-            <a href="/globalk.html">GlobalK</a>
-        </div>
-        <div class="grid-item">
-            <a href="https://www.economize.vc/" target="_blank">Economeze.vc</a>
-        </div>
-        <div class="grid-item">
-            <a href="http://troqueseupc.com.br/home" target="_blank">Troque Seu PC</a>
-        </div>
-        <div class="grid-item">
-            <a href="historia.html" target="_self">História</a>
-        </div>
-        <div class="grid-item">
-            <a href="marketplaces.html" target="_self">Marketplaces</a>
-        </div>
+
+    <div id="loading">
+        <img src="/assets/logo-desktop.png" alt="">
+        <div class="spinner"></div>
     </div>
+
+    <div class="container">
+        <div class="card__container">
+           <article class="card__article">
+              <img src="/assets/landscape-1.png" alt="image" class="card__img">
+
+              <div class="card__data">
+                 <span class="card__description">Direct Sales</span>
+                 <h2 class="card__title">Economize.vc</h2>
+                 <a href="https://www.economize.vc/" class="card__button">Read More</a>
+              </div>
+           </article>
+
+           <article class="card__article">
+              <img src="assets/landscape-2.png" alt="image" class="card__img">
+
+              <div class="card__data">
+                 <span class="card__description">Brazilian Gateway</span>
+                 <h2 class="card__title">GlobalK</h2>
+                 <a href="globalk.html" class="card__button">Read More</a>
+              </div>
+           </article>
+
+           <article class="card__article">
+              <img src="assets/landscape-3.png" alt="image" class="card__img">
+
+              <div class="card__data">
+                 <span class="card__description">History</span>
+                 <h2 class="card__title">GlobalK</h2>
+                 <a href="#" class="card__button">Read More</a>
+              </div>
+           </article>
+
+           <article class="card__article">
+            <img src="assets/landscape-3.png" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Marketplaces</span>
+               <h2 class="card__title">Remarketing</h2>
+               <a href="#" class="card__button">Read More</a>
+            </div>
+         </article>
+
+         <article class="card__article">
+            <img src="assets/landscape-3.png" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Renova PC</span>
+               <h2 class="card__title">Troque seu PC</h2>
+               <a href="#" class="card__button">Read More</a>
+            </div>
+         </article>
+
+         <article class="card__article">
+            <img src="assets/landscape-3.png" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Gamer</span>
+               <h2 class="card__title">Unanium</h2>
+               <a href="#" class="card__button">Read More</a>
+            </div>
+         </article>
+
+       
+        </div>
+     </div>
+
+     <script>
+        // Exibir a tela de loading por 2 segundos
+        window.onload = function () {
+            setTimeout(() => {
+                document.getElementById('loading').style.display = 'none'; // Esconde a tela de loading
+                document.querySelector('.container').style.display = 'block'; // Mostra o conteúdo
+            }, 3000); // 2 segundos
+        };
+    </script>
 </body>
 </html>
