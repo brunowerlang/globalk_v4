@@ -50,7 +50,7 @@ img {
   display: grid;
   place-items: center;
   margin-inline: 1.5rem;
-  padding-block: 5rem;
+  padding-block: 3rem;
 }
 
 .card__container {
@@ -115,11 +115,11 @@ img {
 }
 
 .card__article:hover {
-  animation: remove-overflow 2s forwards;
+  animation: remove-overflow 1s forwards;
 }
 
 .card__article:not(:hover) {
-  animation: show-overflow 2s forwards;
+  animation: show-overflow 1s forwards;
 }
 
 .card__article:not(:hover) .card__data {
@@ -132,7 +132,7 @@ img {
     transform: translateY(-10rem);
   }
   100% {
-    transform: translateY(-7rem);
+    transform: translateY(-10rem);
   }
 }
 
@@ -144,7 +144,7 @@ img {
 
 @keyframes remove-data {
   0% {
-    transform: translateY(-7rem);
+    transform: translateY(-10rem);
   }
   50% {
     transform: translateY(-10rem);
@@ -189,6 +189,10 @@ img {
 @media screen and (min-width: 1120px) {
   .container {
     height: 100vh;
+    display: flex !important
+    ;
+        align-items: center;
+        justify-content: center;
   }
 
   .card__container {
