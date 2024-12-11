@@ -27,6 +27,31 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg">
 
 
+
+    <Style>
+      .back-to-home {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background-color: #e7062b; /* Azul */
+      color: #fff;
+      border: none;
+      width: 40px;
+      height: 40px;
+      font-size: 22px;
+      border-radius: 100%;
+      text-decoration: none;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000; /* Garante que o botão fique acima dos outros elementos */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .back-to-home:hover {
+      color: #FFF !important;
+  }
+</Style>
     <title>GlobalK</title>
   </head>
   <body>
@@ -448,7 +473,9 @@
 </div>
 </section>
 
-
+<a href="index.html" class="back-to-home">
+  <i class="ri-arrow-left-line"></i>
+</a>
 <button id="translateButton"  ></button>
     <button id="translateButton2" ></button>
     <button id="translateButton3" ></button>
